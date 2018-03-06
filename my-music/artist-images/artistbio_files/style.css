@@ -1,0 +1,64 @@
+#artist-image
+{
+    width: 150px;
+    margin: 0 10px 0 0;
+    position: relative;
+    padding-top: 100px;
+}
+#artist-image, #artist-summary
+{
+    display: inline;
+}
+
+#summary-and-bio
+{
+    position: relative;
+    padding-top: 100px;
+    padding-left: 120px;
+}
+
+#top-songs-headers li
+{
+    display: inline;
+    list-style-type: none;
+    padding-left: 30px;
+    font-weight: 900;
+}
+
+#pay-load li
+{
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+/*.song-header-title
+{
+    //width: 37%;
+    float: left;
+}
+
+.song-header-cnt
+{
+    //width: 11.5%;
+    //padding-left: 1.5%;
+    float: left;
+}
+
+.song-header-rating
+{
+    //width: 30%;
+    float: left;
+}
+
+.song-header-duration
+{
+    position: relative;
+    float: left;
+    height: inherit;
+}*/
+
+#page-container
+{
+    padding-left: 30px;
+}

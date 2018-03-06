@@ -1,0 +1,196 @@
+<!doctype html>
+ <title>SIGN UP</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<BODY background="1.jpg">
+
+
+<div id="forms">
+<div class="scroll">
+<form name="myForm" action="insert_query.php" onsubmit="return validateForm()" method="post">
+User name:<br>
+<input type="text" name="uname" id="uname">
+<br>
+<br>
+
+Name:<br>
+<input type="text" name="Name" id="Name">
+<br>
+<br>
+
+Email id:<br>
+<input type="email" name="Email" id="Email">
+<br>
+<br>
+
+City:<br>
+<input type="text" name="City" id="City">
+<br>
+<br>
+
+Password:<br>
+<input type="password" name="pass" id="pass">
+<br>
+<br>
+<br><br>
+<br>
+<br>
+
+
+  <input type="checkbox" name="terms" value="term"> I agree with the terms & conditions
+<br>
+<br>
+
+<input type="submit" value="Register">
+<a href="./index.php">Back to Login</a>
+  <br>
+  <br>
+  </div>
+  </div>
+  </body>
+</form>
+  <script>
+  
+  function validateForm() {
+    var x = document.forms["myForm"]["uname"].value;
+    if (x == null || x == "") {
+        alert("User Name must be filled out");
+        return false;
+    } 
+    x = document.forms["myForm"]["Name"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+
+    x = document.forms["myForm"]["Email"].value;
+    if (x == null || x == "") {
+        alert("Email must be filled out");
+        return false;
+    }
+
+    atpos = x.indexOf("@");
+    dotpos = x.lastIndexOf(".");
+         
+         if (atpos < 1 || ( dotpos - atpos < 2 )) 
+         {
+            alert("Please enter correct email ID")
+            return false;
+         }
+
+    x = document.forms["myForm"]["pass"].value;
+    if (x == null || x == "") {
+        alert("Password must be filled out");
+        return false;
+    }
+
+
+	
+	
+}
+</script>
+<style>
+
+
+div.scroll {
+align: center;
+    background-color:Black;
+	opacity: 0.6;
+font-family: papyrus;
+color: white;
+font-weight:bold;
+    width: 200px;
+    height: 625px;
+
+position:absolute;
+top:20px;
+left:60%;
+padding: 60px;
+
+
+
+}
+
+
+
+#head
+{
+align:center;
+position:fixed;
+width:100%;
+top:0px;
+}
+
+#listmenu
+{
+width:100%;
+position:fixed;
+top:150px;
+z-index:1;
+}
+
+/*Initialize*/
+ul#menu, ul#menu ul.sub-menu {
+    padding:0;
+    margin: 0;
+	
+}
+ul#menu li, ul#menu ul.sub-menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+/*Link Appearance*/
+ul#menu li a, ul#menu li ul.sub-menu li a {
+   text-decoration: none;
+   color:white;
+   font-weight: 900;
+   font-size:200%;
+   text-align:center;
+   
+font-family:broadway;
+
+
+   
+    
+    background: black;
+    padding: 10px;
+    display:inline-block;
+    width: 200px;
+    
+}
+/*Make the parent of sub-menu relative*/
+ul#menu li {
+    position: relative;
+
+}
+/*sub menu*/
+ul#menu li ul.sub-menu {
+    display:none;
+    position: absolute;
+	font-size:50%;
+    top: 60px;
+    left: 0px;
+    width: 100px;
+}
+ul#menu li:hover ul.sub-menu {
+    display:inline-block;
+}
+
+
+
+
+#forms{
+position:absolute;
+top: 40px;
+left:40px;
+
+align:left;
+}
+a:link {
+    color: white;
+}
+a:visited{
+color: white;
+}
+</style>

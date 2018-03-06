@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>
+SIGN IN
+</title>
+<style>
+t {font-family:broadway}
+</style>
+</HEAD>
+<body style="background-color: #FFFFFF">
+<div id="header">
+</div>
+<div id="section1" align="left">
+<img src="background.png" alt="HTML5 Icon">
+</div>
+<center>
+<div id="nav"> 
+<form name="review" action="lo.php" onsubmit="return validateForm()" method="post">
+	
+        
+    <center><legend><t><h2> Sign in </h2><t></legend></center>
+      <center><legend><t><h2> </h2><t></legend></center>
+        <center><legend><t><h2> </h2><t></legend></center>
+    <center><legend><t><h4>Enter credentials of your MY MUSIC account</h4><t></legend></center>
+    <br />  
+	<br /> 
+    <label for="email"><t>Username: </t></label>
+    <input placeholder="Enter your username" type="text" name="uname" id="uname" />
+  <br />  <br />
+    <label for="pass"><t>Password: </t></label>
+    <input placeholder="Enter your password" type="password" name="pass" id="pass" />
+	<br /> <br />
+    <t><input type="submit" name="submit" value="Submit" /></t>
+    <input type="reset" value="Clear" />
+	<br /> <br /> <br /> <br /> 
+  </p>
+  <h3 style="font-family:broadway">
+<p>New on MY MUSIC??</p>
+  <a href="sign.html"><b>Create an account</b></a></h3>
+</form>
+
+</div>
+</center>
+
+<div id="section" align="center">
+<img src="b1.gif" alt="HTML5 Icon" height="550" width="720">
+</div>
+
+
+<script>
+
+  function validateForm() {
+    var x = document.forms["review"]["uname"].value;
+    if (x == null || x == "") {
+        alert("Username must be filled out");
+        return false;
+    }
+    x = document.forms["review"]["pass"].value;
+    if (x == null || x == "") {
+        alert("Password must be filled out");
+        return false;
+    }
+}
+</script>
+</body>
+<style>
+#header
+{
+background-color: #FFFFFF;
+font-size:200%;
+color:FFFFFF;
+}
+
+ul#menu, ul#menu ul.sub-menu {
+    
+    background-color: #FFFFFF;
+    
+    left:10px;  
+    padding:0;
+    margin: 0;
+	
+}
+ul#menu li, ul#menu ul.sub-menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul#menu li a, ul#menu li ul.sub-menu li a {
+   text-decoration: none;
+   color:white;
+   font-weight: 900;
+   font-size:200%;
+   text-align:center;
+   font-family:broadway;
+
+    background-color: FFFFFF;
+    padding: 10px;
+    display:inline-block;
+    width: 250px;
+    
+}
+
+ul#menu li {
+    position: relative;
+
+}
+
+ul#menu li ul.sub-menu {
+    display:none;
+    position: absolute;
+    font-size:50%;
+    top: 60px;
+    left: 0px;
+    width: 100px;
+}
+ul#menu li:hover ul.sub-menu {
+    display:block;
+}
+#nav {
+    color:black;
+    line-height:30px;
+    width:600px;
+    height:500px;
+    float:left;
+    padding:5px;
+    text-align: center;
+    
+    background-color: FFFFFF;	
+    
+}
+#section {
+    
+    float:center;
+    padding:20px; 
+    height:300px;	 
+}
+#section1 {
+    
+    float:center;
+    padding:5px; 
+     
+}
+a:link {
+    color: blue;
+}
+a:visited{
+color: blue;
+}
+
+</style>
+</html>

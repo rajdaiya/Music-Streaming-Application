@@ -1,0 +1,136 @@
+#section1 {
+    
+    float:center;
+    padding-right: 50px; 
+    padding-left: 50px;
+    padding-top: 50px;
+    font-weight: 900;
+    font-size:200%;  
+}
+
+#artist-image
+{
+    width: 150px;
+    margin: 0 10px 0 0;
+    position: relative;
+    padding-top: 20px;
+}
+#artist-image, #artist-summary
+{
+    display: inline;
+}
+
+#user-image
+{
+    width: 150px;
+    margin: 0 10px 0 0;
+    position: relative;
+    padding-top: 20px;
+}
+#user-image, #user-summary
+{
+    display: inline;
+}
+
+#summary-and-bio
+{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 120px;
+}
+#success-msg
+{
+    padding-top: 5px;
+}
+#top-songs-headers li
+{
+    display: inline;
+    list-style-type: none;
+    //padding-left: 30px;
+    font-weight: 900;
+}
+
+#recent-albums-headers li
+{
+    display: inline;
+    list-style-type: none;
+    //padding-left: 30px;
+    font-weight: 900;
+    display: block;
+    overflow: auto;
+    //overflow-wrap: normal;
+    //overflow-wrap: break-word;
+    
+}
+
+
+#fav-artist-songs-headers li
+{
+    display: inline;
+    list-style-type: none;
+    //padding-left: 30px;
+    font-weight: 900;
+    display: block;
+    overflow: auto;
+}
+
+#play-history-songs-headers li
+{
+    display: inline;
+    list-style-type: none;
+    //padding-left: 30px;
+    font-weight: 900;
+    display: block;
+    overflow: auto;
+}
+#songs-list li
+{
+    display: inline;
+    list-style-type: none;
+    //padding-left: 30px;
+    font-weight: 900;
+    display: block;
+    overflow: auto;
+}
+
+#playlist-headers li
+{
+   display: inline;
+    list-style-type: none;
+    //padding-left: 30px;
+    font-weight: 900;
+    display: block;
+    overflow: auto; 
+}
+
+
+.pay-load li
+{
+    display: inline;
+    list-style-type: none;
+}
+
+#page-container
+{
+    padding-left: 120px;
+    overflow-y: scroll;
+    height: 650px;
+    padding-right: 120px;
+}
+
+.iframe-container
+{
+    left: 0px; 
+    padding-left:120px; 
+    border: 0px none; 
+    height: 370px; 
+    position: fixed; 
+    width: 80%; 
+    overflow: hidden; 
+    bottom: -260px;
+}
+
+.web-btn
+{
+    width:170px;
+}
